@@ -28,17 +28,36 @@
         but understanding how developers think is invaluable.
       </p>
     </div>
-    <div class="form" id="form">
+    <div class="form">
       <div class="top">
         <span>Try it free 7 days</span>
         &nbsp;
         <span>then $20/mo. thereafter</span>
       </div>
-      <form action="#" method="get">
-        <div><input type="text" id="first_name" placeholder="First Name"></div>
-        <div><input type="text" id="last_name" placeholder="Last Name"></div>
-        <div><input type="text" id="email" placeholder="Email"></div>
-        <div><input type="password" id="password" placeholder="Password"></div>
+      <form action="/" method="Get" id="form">
+        <div>
+          <input type="text" id="first_name" placeholder="First Name">
+          <img src="/images/icon-error.svg" alt="error" id="f_name_error"
+            title="First name must begin with a capital letter">
+          <span class="error" id="f_name_message"></span>
+        </div>
+        <div>
+          <input type="text" id="last_name" placeholder="Last Name">
+          <img src="/images/icon-error.svg" alt="error" id="l_name_error"
+            title="Last name must begin with a capital letter">
+          <span class="error" id="l_name_message"></span>
+        </div>
+        <div>
+          <input type="text" id="email" placeholder="Email">
+          <img src="/images/icon-error.svg" alt="error" id="email_error" title="Email must conatin @ char">
+          <span class="error" id="email_message"></span>
+        </div>
+        <div>
+          <input type="password" id="password" placeholder="Password">
+          <img src="/images/icon-error.svg" alt="error" id="password_error"
+            title="Password must contain at least one special char, one number and one lower and upper case. Minimum eight chars">
+          <span class="error" id="password_message"></span>
+        </div>
         <div><button type="submit">Claim your free trial</button></div>
         <div class="terms">
           <span>By clicking the button, you are agreeing to our</span>
@@ -47,6 +66,8 @@
       </form>
     </div>
   </main>
+  <!-- js -->
+  <script src="/js/scripts.js"></script>
 </body>
 
 </html>

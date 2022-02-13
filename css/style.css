@@ -38,7 +38,7 @@ main {
 
 .header, .form {
     width: 30%;
-    height: 500px;
+    height: 550px;
 }
 
 .header {
@@ -88,11 +88,28 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .form form div {
     width: 85%;
+    position: relative;
+}
+
+.form img {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.error {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    font-size: 14px;
+    color: var(--pr-red);
+    visibility: hidden;
 }
 
 input, button {
@@ -102,10 +119,15 @@ input, button {
 }
 
 input {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     border: 1px solid hsla(249, 10%, 26%, 0.2);
     text-indent: 30px;
     font-weight: var(--fw-semi-bold);
+}
+
+input:focus {
+    border: 1px solid var(--n-dark-blue);
+    outline: none;
 }
 
 ::placeholder {
