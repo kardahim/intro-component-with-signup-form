@@ -166,10 +166,15 @@ button:hover {
     font-weight: var(--fw-semi-bold);
 }
 
+footer {
+    position: absolute;
+    bottom: 5vh;
+    left: 35vw;
+}
+
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
+    font-size: var(--fs)2;
+}
 
 .attribution a {
     color: hsl(228, 45%, 44%);
@@ -203,7 +208,7 @@ button:hover {
     }
 
     body {
-        height: 120vh;
+        height: 130vh;
     }
 
     .header, .form {
@@ -216,6 +221,11 @@ button:hover {
 
     .header p {
         font-size: 25px;
+    }
+
+    footer {
+        bottom: -27vh;
+        left: 23vw;
     }
 }
 
@@ -231,6 +241,10 @@ button:hover {
     .top {
         margin: 30px 0;
     }
+
+    footer {
+        left: 0;
+    }
 }
 
 @media screen and (max-width:415px) {
@@ -240,5 +254,5 @@ button:hover {
 
     .top span:nth-child(2) {
         margin-left: 0;
-     }
+    }
 }
