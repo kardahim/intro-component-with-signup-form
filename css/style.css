@@ -77,6 +77,7 @@ main {
 
 .top span:nth-child(2) {
    color: var(--n-grayish-blue);
+   margin-left: 5px;
 }
 
 form {
@@ -172,4 +173,72 @@ button:hover {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:1200px) {
+    .header, .form {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .header, .form {
+        margin: 0;
+    }
+
+    main {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:850px) {
+    main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top {
+        height: 80px;
+        margin: 50px 0;
+    }
+
+    body {
+        height: 120vh;
+    }
+
+    .header, .form {
+        width: 80%;
+    }
+
+    .header h1 {
+        font-size: 45px;
+    }
+
+    .header p {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: var(--fs);
+    }
+
+    .top {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .top {
+        flex-direction: column;
+    }
+
+    .top span:nth-child(2) {
+        margin-left: 0;
+     }
 }
