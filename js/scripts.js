@@ -36,6 +36,7 @@ function validation(event) {
     }
     else if (f_name.value.match(name_pattern) == null) {
         ok = false;
+        message = "Invalid First Name";
         error(f_name, message);
     }
     else {
@@ -49,6 +50,7 @@ function validation(event) {
         error(l_name, message);
     }
     else if (l_name.value.match(name_pattern) == null) {
+        message = "Invalid Last Name";
         ok = false;
         error(l_name, message);
     }
@@ -63,6 +65,7 @@ function validation(event) {
         error(email, message);
     }
     else if (email.value.match(email_pattern) == null) {
+        message = "Invalid Email";
         ok = false;
         error(email, message);
     }
